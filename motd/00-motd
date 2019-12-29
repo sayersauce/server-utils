@@ -1,0 +1,14 @@
+#!/bin/bash
+
+RED="\e[91m"
+BOLD="\e[1m"
+STOP="\e[0m"
+
+printf $RED$BOLD
+figlet -f slant "$HOSTNAME ."
+printf $STOP
+
+echo
+
+neofetch --off --disable title cols term shell kernel cpu gpu
+
